@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Sparkles } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useNavScroll } from '../hooks/useScrollAnimation';
 import { products } from '../data/products';
 
@@ -21,12 +21,24 @@ export default function Navbar() {
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 lg:h-20 flex items-center justify-between" aria-label="Main navigation">
+          
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <img src="/MAINLOGO.png" alt="Shree Krishna Labels" className="h-10 w-auto object-contain" />
-             <span className={`font-serif text-lg font-medium transition-colors ${scrolled ? 'text-ink' : 'text-ink'}`}>
-              Shree <span className="text-gold-gradient">Krishna</span> Labels
-            </span>
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className={`rounded-xl p-1.5 transition-all duration-300 ${scrolled ? 'bg-ink shadow-md' : 'bg-ink/90 shadow-lg'}`}>
+              <img
+                src="/MAINLOGO.png"
+                alt="Shree Krishna Labels"
+                className="h-10 w-10 object-contain"
+              />
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="font-serif text-base font-semibold text-ink tracking-wide">
+                Shree <span className="text-gold-gradient">Krishna</span> Labels
+              </span>
+              <span className="font-mono text-[9px] tracking-[0.18em] text-ink-muted uppercase">
+                Est. 1999 · Vasai, Mumbai
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -65,7 +77,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a      
+            <a
               href="https://wa.me/918879552022?text=Hi%20I%20need%20a%20quote%20for%20labels"
               target="_blank"
               rel="noopener noreferrer"
