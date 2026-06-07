@@ -24,9 +24,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img src="/MAINLOGO.png" alt="Shree Krishna Labels" className="h-10 w-auto object-contain" />
-              <Sparkles className="w-4 h-4 text-ink" />
-            </div>
-            <span className={`font-serif text-lg font-medium transition-colors ${scrolled ? 'text-ink' : 'text-ink'}`}>
+             <span className={`font-serif text-lg font-medium transition-colors ${scrolled ? 'text-ink' : 'text-ink'}`}>
               Shree <span className="text-gold-gradient">Krishna</span> Labels
             </span>
           </Link>
