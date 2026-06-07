@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="max-w-7xl mx-auto px-6 lg:px-12 h-16 lg:h-20 flex items-center justify-between" aria-label="Main navigation">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
+            <img src="/MAINLOGO.png" alt="Shree Krishna Labels" className="h-10 w-auto object-contain" />
               <Sparkles className="w-4 h-4 text-ink" />
             </div>
             <span className={`font-serif text-lg font-medium transition-colors ${scrolled ? 'text-ink' : 'text-ink'}`}>
