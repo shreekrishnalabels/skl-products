@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a
+            <a      
               href="https://wa.me/918879552022?text=Hi%20I%20need%20a%20quote%20for%20labels"
               target="_blank"
               rel="noopener noreferrer"
