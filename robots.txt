@@ -8,8 +8,7 @@ Disallow: /dashboard/
 Disallow: /.git/
 
 # Sitemaps
-Sitemap: https://shreekrishnalabels.in/sitemap.xml
-Sitemap: https://shreekrishnalabels.in/sitemap-index.xml
+Sitemap: https://products.shreekrishnalabels.in/sitemap.xml
 
 # ── AI Crawlers — ALL ALLOWED ──────────────────────────────
 # ChatGPT / OpenAI
@@ -69,4 +68,4 @@ User-agent: SemrushBot
 Crawl-delay: 10
 
 # Host
-Host: https://shreekrishnalabels.in
+Host: https://products.shreekrishnalabels.in
