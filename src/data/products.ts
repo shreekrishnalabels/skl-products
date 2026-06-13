@@ -68,8 +68,8 @@ const makeSchemas = (name: string, slug: string, desc: string, img: string, faqs
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shreekrishnalabels.in" },
-      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.shreekrishnalabels.in/products" },
-      { "@type": "ListItem", "position": 3, "name": name, "item": `https://www.shreekrishnalabels.in/${slug}` }
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://products.shreekrishnalabels.in" },
+      { "@type": "ListItem", "position": 3, "name": name, "item": `https://products.shreekrishnalabels.in/${slug}` }
     ]
   },
   product: {
@@ -82,7 +82,7 @@ const makeSchemas = (name: string, slug: string, desc: string, img: string, faqs
     "manufacturer": {
       "@type": "Organization",
       "name": "Shree Krishna Labels Co.",
-      "url": "https://www.shreekrishnalabels.in",
+      "url": "https://products.shreekrishnalabels.in",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Vasai",
@@ -95,15 +95,13 @@ const makeSchemas = (name: string, slug: string, desc: string, img: string, faqs
     "offers": {
       "@type": "Offer",
       "seller": { "@type": "Organization", "name": "Shree Krishna Labels Co." },
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "INR",
+      "availability": "https://schema.org/MadeToOrder",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "INR",
+        "valueAddedTaxIncluded": false
+      },
       "areaServed": ["IN", "US", "GB", "AE", "AU"]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5"
     }
   },
   faq: {
@@ -119,7 +117,7 @@ const makeSchemas = (name: string, slug: string, desc: string, img: string, faqs
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Shree Krishna Labels Co.",
-    "url": "https://www.shreekrishnalabels.in",
+    "url": "https://products.shreekrishnalabels.in",
     "telephone": "+918879552022",
     "address": {
       "@type": "PostalAddress",
@@ -137,8 +135,8 @@ const makeSchemas = (name: string, slug: string, desc: string, img: string, faqs
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Shree Krishna Labels Co.",
-    "url": "https://www.shreekrishnalabels.in",
-    "logo": "https://www.shreekrishnalabels.in/og-image.png",
+    "url": "https://products.shreekrishnalabels.in",
+    "logo": "https://products.shreekrishnalabels.in/og-image.png",
     "foundingDate": "1999",
     "description": "Premium garment label manufacturer based in Vasai, Maharashtra, India. Serving 500+ brands globally since 1999.",
     "contactPoint": {
@@ -170,8 +168,8 @@ export const products: ProductData[] = [
     category: "Fabric Labels",
     seoTitle: "Woven Labels Manufacturer India | Custom Woven Tags | SKL",
     metaDescription: "Premium woven label manufacturer in Vasai, Mumbai. Thread-precise custom woven labels for fashion brands. Low MOQ, 7-day sampling, global shipping. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/woven-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/woven-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["woven labels manufacturer india", "custom woven labels", "woven garment labels mumbai", "thread labels"],
     hero: {
       heading: "Woven Labels That Speak in Thread",
@@ -236,8 +234,8 @@ export const products: ProductData[] = [
     category: "Fabric Labels",
     seoTitle: "Satin Labels Manufacturer India | Luxury Garment Labels | SKL",
     metaDescription: "Ultra-soft satin label manufacturer Vasai Mumbai. Whisper-soft for lingerie, luxury fashion & kidswear. Custom sizes, 8-colour print, ISO certified. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/satin-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/satin-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["satin labels manufacturer india", "satin garment labels", "luxury satin labels mumbai", "soft labels lingerie"],
     hero: {
       heading: "Satin Labels — Whisper-Soft Luxury",
@@ -297,8 +295,8 @@ export const products: ProductData[] = [
     category: "Fabric Labels",
     seoTitle: "Cotton Labels Manufacturer India | Natural Fabric Labels | SKL",
     metaDescription: "Organic cotton label manufacturer Vasai Mumbai. Natural, sustainable garment labels for eco-conscious brands. Custom print, low MOQ, global delivery. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/cotton-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/cotton-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["cotton labels manufacturer india", "organic cotton labels", "natural fabric labels", "eco labels garments"],
     hero: {
       heading: "Cotton Labels — Naturally Premium",
@@ -357,8 +355,8 @@ export const products: ProductData[] = [
     category: "Printed Labels",
     seoTitle: "Heat Transfer Labels Manufacturer India | No-Sew Labels | SKL",
     metaDescription: "Heat transfer label manufacturer Vasai Mumbai. Tag-free, no-sew labels for activewear & sportswear. Full colour, wash-fast, soft-feel. Custom. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/heat-transfer-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/heat-transfer-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["heat transfer labels india", "no sew labels", "tag free labels sportswear", "heat transfer printing manufacturer"],
     hero: {
       heading: "Heat Transfer Labels — Seamlessly Branded",
@@ -426,8 +424,8 @@ export const products: ProductData[] = [
     category: "Specialty Labels",
     seoTitle: "TPU Labels Manufacturer India | Rubber Feel Brand Labels | SKL",
     metaDescription: "Premium TPU label manufacturer Vasai Mumbai. Soft-rubber 3D brand labels for sportswear, bags & footwear. Embossed, debossed, full colour. Custom. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/tpu-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/tpu-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["TPU labels manufacturer india", "rubber labels sportswear", "TPU brand patches", "3D rubber labels"],
     hero: {
       heading: "TPU Labels — 3D Brand Identity",
@@ -495,8 +493,8 @@ export const products: ProductData[] = [
     category: "Specialty Labels",
     seoTitle: "Silicone Labels Manufacturer India | Soft PVC Free Labels | SKL",
     metaDescription: "Custom silicone label manufacturer Vasai Mumbai. Gel-soft 3D labels for premium sportswear, kids & luxury brands. Eco-safe, heat-bonded. Low MOQ. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/silicone-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/silicone-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["silicone labels manufacturer india", "gel labels sportswear", "silicone patches custom", "soft rubber labels"],
     hero: {
       heading: "Silicone Labels — Gel-Soft Precision",
@@ -554,8 +552,8 @@ export const products: ProductData[] = [
     category: "Luxury Labels",
     seoTitle: "Leather Labels Manufacturer India | Debossed Leather Patches | SKL",
     metaDescription: "Custom leather label manufacturer Vasai Mumbai. Genuine & vegan leather patches, debossed brand marks for denim, bags & luxury fashion. Low MOQ. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/leather-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/leather-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["leather labels manufacturer india", "leather patches custom", "debossed leather brand tags", "genuine leather labels"],
     hero: {
       heading: "Leather Labels — Heritage in Every Impression",
@@ -623,8 +621,8 @@ export const products: ProductData[] = [
     category: "Specialty Labels",
     seoTitle: "Embroidered Badges Manufacturer India | Custom Patches | SKL",
     metaDescription: "Custom embroidered badge & patch manufacturer Vasai Mumbai. Iron-on, sew-on patches for fashion, uniforms & sportswear. 15+ thread colours. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/embroidered-badges",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/embroidered-badges",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["embroidered badges manufacturer india", "custom embroidered patches", "iron on patches india", "embroidered labels"],
     hero: {
       heading: "Embroidered Badges — Raised in Thread",
@@ -692,8 +690,8 @@ export const products: ProductData[] = [
     category: "Printed Labels",
     seoTitle: "Printed Labels Manufacturer India | Custom Garment Labels | SKL",
     metaDescription: "Premium printed label manufacturer Vasai Mumbai. Full-colour digital & screen printed labels for fashion, FMCG & garments. Low MOQ, fast turnaround. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/printed-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/printed-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["printed labels manufacturer india", "custom printed labels", "garment printed labels", "digital print labels"],
     hero: {
       heading: "Printed Labels — Colour Without Compromise",
@@ -751,8 +749,8 @@ export const products: ProductData[] = [
     category: "Packaging",
     seoTitle: "Hang Tags Manufacturer India | Custom Garment Swing Tags | SKL",
     metaDescription: "Premium hang tag manufacturer Vasai Mumbai. Luxury swing tags for fashion brands — custom shape, foil, emboss, string. Low MOQ, global shipping. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/hang-tags",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/hang-tags",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["hang tags manufacturer india", "custom swing tags", "garment hang tags", "luxury hang tags fashion"],
     hero: {
       heading: "Hang Tags — First Impressions, Perfected",
@@ -819,8 +817,8 @@ export const products: ProductData[] = [
     category: "Functional Labels",
     seoTitle: "Barcode Labels Manufacturer India | Custom Sticker Labels | SKL",
     metaDescription: "Custom barcode label manufacturer Vasai Mumbai. GS1, EAN, QR code labels for garments and retail. Thermal, digital print, durable adhesive. Low MOQ. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/barcode-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/barcode-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["barcode labels manufacturer india", "custom barcode stickers", "GS1 labels garment", "retail barcode labels"],
     hero: {
       heading: "Barcode Labels — Scan-Perfect Every Time",
@@ -887,8 +885,8 @@ export const products: ProductData[] = [
     category: "Functional Labels",
     seoTitle: "Size Labels Manufacturer India | Garment Size Tags | SKL",
     metaDescription: "Custom size label manufacturer Vasai Mumbai. Woven, printed, and heat transfer size labels for all garment types. XS–5XL, custom sizing. Low MOQ. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/size-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/size-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["size labels manufacturer india", "garment size tags", "woven size labels", "custom sizing labels"],
     hero: {
       heading: "Size Labels — Precision Identification",
@@ -945,8 +943,8 @@ export const products: ProductData[] = [
     category: "Functional Labels",
     seoTitle: "Care Labels Manufacturer India | Wash Care Labels | SKL",
     metaDescription: "Garment care label manufacturer Vasai Mumbai. GINETEX compliant wash care labels for export fashion. Multi-language, ISO symbols, satin & woven. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/care-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/care-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["care labels manufacturer india", "wash care labels", "garment care instruction labels", "GINETEX labels"],
     hero: {
       heading: "Care Labels — Compliance Meets Craft",
@@ -1003,8 +1001,8 @@ export const products: ProductData[] = [
     category: "Packaging",
     seoTitle: "Custom Packaging Labels India | Premium Product Labels | SKL",
     metaDescription: "Custom packaging label manufacturer Vasai Mumbai. Premium product labels for boxes, bags & packaging. Foil, emboss, custom shapes. FSC certified. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/custom-packaging-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/custom-packaging-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["custom packaging labels india", "premium product labels", "packaging stickers manufacturer", "brand labels packaging"],
     hero: {
       heading: "Packaging Labels — Unboxing Elevated",
@@ -1070,8 +1068,8 @@ export const products: ProductData[] = [
     category: "Smart Labels",
     seoTitle: "RFID Labels Manufacturer India | Smart Garment Tags | SKL",
     metaDescription: "Custom RFID label manufacturer Vasai Mumbai. UHF & HF RFID labels for garment tracking, inventory & anti-counterfeit. ISO certified, global brands. Est. 1999.",
-    canonicalUrl: "https://www.shreekrishnalabels.in/rfid-labels",
-    ogImage: "https://www.shreekrishnalabels.in/og-image.png",
+    canonicalUrl: "https://products.shreekrishnalabels.in/rfid-labels",
+    ogImage: "https://products.shreekrishnalabels.in/og-image.png",
     keywords: ["RFID labels manufacturer india", "RFID garment tags", "smart labels apparel", "UHF RFID labels"],
     hero: {
       heading: "RFID Labels — Intelligence Woven In",
