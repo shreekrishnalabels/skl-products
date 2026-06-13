@@ -12,7 +12,7 @@ export default function Home() {
       <Helmet>
         <title>Shree Krishna Labels — Premium Garment Branding Solutions | Vasai, Mumbai</title>
         <meta name="description" content="India's trusted premium label manufacturer since 1999. Woven labels, satin labels, embroidered badges, hang tags & more. 500+ global brands. Free samples." />
-        <link rel="canonical" href="https://www.shreekrishnalabels.in/products" />
+        <link rel="canonical" href="https://products.shreekrishnalabels.in/" />
       </Helmet>
       <Navbar />
 
